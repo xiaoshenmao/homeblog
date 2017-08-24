@@ -8,6 +8,7 @@ menu:
 subnav:
   github: "https://github.com/xiaoshenmao"
   weibo: "http://weibo.com/u/6160806883"
+  rss: /atom.xml
   # jianshu: "http://www.jianshu.com/u/9f36df533906"
   # bilibili: "https://space.bilibili.com/3787320"
   # mail: "hello_sorrow@163.com"
@@ -23,12 +24,12 @@ subnav:
   # twitter: "hello_sorrow@163.com"
   #linkedin: "#"
 
-# rss: /atom.xml
+
 
 # 是否需要修改 root 路径
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
 # 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
-url: https://xiaoshenmao.github.io/blog 
+url: https://xiaoshenmao.github.io/blog
 root: /blog/
 
 # Content
@@ -103,6 +104,9 @@ slider:
   # 是否默认展开tags板块
   showTags: false
 
+# 设置rss
+plugins: hexo-generate-feed
+
 # 智能菜单
 # 如不需要，将该对应项置为false
 # 比如
@@ -110,7 +114,7 @@ slider:
 #  friends: false
 smart_menu:
   innerArchive: '所有文章'
-  friends: '友链'
+#  friends: '友链'
   aboutme: '关于我'
 
 friends:
@@ -121,4 +125,5 @@ friends:
   友情链接5: http://localhost:4000/
   友情链接6: http://localhost:4000/
 
-aboutme: 嗨,我是向宇辉,一名来自中国的开发者<br><br>(@xiaoshenmao)<br>记录,分享
+aboutme: 嗨,我是向宇辉,一名来自中国的iOS开发者<br><br>(@xiaoshenmao)<br>论至德者不和于俗,成大功者不谋于众
+

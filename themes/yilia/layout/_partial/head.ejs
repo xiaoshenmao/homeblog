@@ -32,6 +32,23 @@
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
   <%- partial('css') %>
+  <!--自定义修改进度条和颜色-->
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+  <style>
+    .pace .pace-progress {
+      background: #7bbfea; /*进度条颜色*/
+      height: 3px;
+    }
+    .pace .pace-progress-inner {
+      box-shadow: 0 0 10px #7bbfea, 0 0 5px     ##7bbfea; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+      border-top-color: #7bbfea;    /*上边框颜色*/
+      border-left-color: #7bbfea;    /*左边框颜色*/
+    }
+  </style>
+  <!--到这里-->
   <style type="text/css">
   <% var defaultCtnBg = 'linear-gradient(200deg,#a0cfe4,#e8c37e)' %>
     #container.show {
@@ -40,4 +57,5 @@
   </style>
   <%- partial('google-analytics') %>
   <%- partial('baidu-analytics') %>
+
 </head>
