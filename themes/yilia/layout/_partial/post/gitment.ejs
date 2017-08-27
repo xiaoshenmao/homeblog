@@ -1,0 +1,15 @@
+<div id="box"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+  var gitment = new Gitment({
+    id: window.location.pathname,
+    owner: 'xiaoshenmao',
+    repo: 'blog',
+    oauth: {
+      client_id: 'cc78066e32dbd079c725',
+      client_secret: '53b5d6bffd0edd9f87a7664aa7409d0b622ec01b',
+    },
+  })
+  gitment.render('box')
+</script>

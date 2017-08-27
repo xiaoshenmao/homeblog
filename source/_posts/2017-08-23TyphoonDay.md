@@ -2,6 +2,7 @@
 layout: post
 title: 随笔 又记台风天8.21-8.27
 date: 2017-08-23 14:09:23
+comments: true
 tags:
 - 随笔
 - 心情

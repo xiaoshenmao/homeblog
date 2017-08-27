@@ -77,9 +77,17 @@
   <%- partial('post/nav') %>
 <% } %>
 <%- partial('_partial/aside') %>
-
-
 <% if (!index && post.comments){ %>
+
+<!--//就是下面这一段代码-->
+<% if (theme.gitment){ %>
+<%- partial('post/gitment', {
+  key: post.slug,
+  title: post.title,
+  url: config.url+url_for(post.path)
+}) %>
+<% } %>
+
   <% if (theme.duoshuo){ %>
   <%- partial('post/duoshuo', {
       key: post.slug,
@@ -87,7 +95,7 @@
       url: config.url+url_for(post.path)
     }) %>
   <% } %>
-  
+
   <% if (theme.wangyiyun){ %>
   <%- partial('post/wangyiyun', {
       key: post.slug,
